@@ -14,7 +14,7 @@ public class TaskOne {
         // 2. Create new list "colors" (ArrayList) of type String
         List<String> listColos = new ArrayList<String>();
 
-        // 3. Copy/add all elements from String array to colors list.
+        // 3. Copy/add all elements from String array to colors list
         Collections.addAll(listColos, colors);
 
         //for(String e:colors){
