@@ -29,7 +29,7 @@ public final class Text {
         //change to lower case and split
         String[] content = Text.TEXT.toLowerCase().split("\\s+");
 
-        //create set oof HashSet becuase HashSet only save unique values.
+        //create set oof HashSet becuase HashSet only save unique values
         Set<String> uniqueWordsFromText = new HashSet<>();
         Collections.addAll(uniqueWordsFromText, content);
 
