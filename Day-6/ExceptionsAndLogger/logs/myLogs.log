@@ -1,0 +1,7 @@
+[INFO ] 2022-05-16 16:05:30.444 [main] ExceptionsAndLogger - Bank Account Deposit of 100.5 unites successful? true
+[INFO ] 2022-05-16 16:05:30.449 [main] ExceptionsAndLogger - Bank Account Deposit of 7000 unites successful? false
+[INFO ] 2022-05-16 16:05:30.450 [main] ExceptionsAndLogger - Bank Account Withdraw of 100.5 unites successful? true
+[INFO ] 2022-05-16 16:05:30.451 [main] ExceptionsAndLogger - Bank Account Withdraw of 500.7 unites successful? false
+[INFO ] 2022-05-16 16:05:30.452 [main] ExceptionsAndLogger - Bank Account Transfer of 20 unites successful? true
+[INFO ] 2022-05-16 16:05:30.452 [main] ExceptionsAndLogger - Bank Account Transfer of 800.5 unites successful? false
+[ERROR] 2022-05-16 16:05:30.453 [main] ExceptionsAndLogger - Exception occur / by zero
