@@ -28,12 +28,12 @@ public class FootballMatchController {
     }
 
     @RequestMapping(value = "createfootballmatch", method = RequestMethod.POST)
-    public String createStudent(@RequestBody FootballMatch footballMatch){
+    public String createFootballMatch(@RequestBody FootballMatch footballMatch){
         return footballMatchsService.createFootballMatch(footballMatch);
     }
 
     @RequestMapping(value = "readfootballmatchs", method = RequestMethod.GET)
-    public List<FootballMatch> readStudents(){
+    public List<FootballMatch> fetchFootballMatchs(){
         return footballMatchsService.readMatchs();
     }
 
