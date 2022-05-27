@@ -257,9 +257,9 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr th:each="match: ${matchs}">
-                  <td th:text="${match.teamAName}"/>
-                  <td th:text="${match.teamBName}"/>
+                <tr th:each="match: ${footballMatchs}">
+                  <td th:text="${match.teamA}"/>
+                  <td th:text="${match.teamB}"/>
                   <td th:text="${match.date}"/>
                   <td th:text="${match.time}"/>
                 </tr>

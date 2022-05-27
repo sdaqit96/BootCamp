@@ -1,10 +1,10 @@
-package com.Stsystem.stsystem;
+package com.StSystem;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class StsystemApplicationTests {
+class SpringBootAndSqLiteApplicationTests {
 
 	@Test
 	void contextLoads() {

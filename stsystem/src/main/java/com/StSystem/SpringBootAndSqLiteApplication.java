@@ -1,13 +1,13 @@
-package com.Stsystem.stsystem;
+package com.StSystem;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class StsystemApplication {
+public class SpringBootAndSqLiteApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(StsystemApplication.class, args);
+		SpringApplication.run(SpringBootAndSqLiteApplication.class, args);
 	}
 
 }
