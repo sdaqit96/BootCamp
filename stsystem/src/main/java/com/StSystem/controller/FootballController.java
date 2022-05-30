@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.Arrays;
 import java.util.List;
 
-@Controller
-public class FootballMatchController {
+@RestController
+public class FootballController {
 
     @Autowired
     private FootballMatchsService footballMatchsService;
@@ -21,19 +21,14 @@ public class FootballMatchController {
         return "The application is up...";
     }
 
-    @GetMapping("/")
-    public String getupdates(Model model){
-        model.addAttribute("footballMatchs", footballMatchsService.readMatchs());
-        return "index";
-    }
 
     @RequestMapping(value = "createfootballmatch", method = RequestMethod.POST)
-    public String createFootballMatch(@RequestBody FootballMatch footballMatch){
+    public String createStudent(@RequestBody FootballMatch footballMatch){
         return footballMatchsService.createFootballMatch(footballMatch);
     }
 
     @RequestMapping(value = "readfootballmatchs", method = RequestMethod.GET)
-    public List<FootballMatch> fetchFootballMatchs(){
+    public List<FootballMatch> readStudents(){
         return footballMatchsService.readMatchs();
     }
 

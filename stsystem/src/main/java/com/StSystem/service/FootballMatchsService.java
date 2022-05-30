@@ -7,9 +7,10 @@ import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
-@Component
 @Service
 public class FootballMatchsService {
 
@@ -73,4 +74,17 @@ public class FootballMatchsService {
             return "Match does not exist";
         }
     }
+
+    @Transactional
+    public List<FootballMatch> readUpcomming(){
+
+        List<FootballMatch> upcommingMatchs = new ArrayList<>();
+        for(FootballMatch match: footballRepository.findAll())
+        {
+            upcommingMatchs.add(match);
+        }
+        upcommingMatchs.remove(0);
+        return upcommingMatchs;
+    }
+
 }
